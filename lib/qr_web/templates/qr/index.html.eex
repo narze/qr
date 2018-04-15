@@ -6,9 +6,16 @@
 <div class="row marketing">
   <div class="col-lg-6">
     <h4>Code Input</h4>
+    <form action="<%= qr_path @conn, :index %>">
+      <div class="form-group">
+        <input type="text" name="code" class="input input-lg form-control"></input>
+      </div>
+      <button type="submit" class="btn btn-lg">Generate</button>
+    </form>
   </div>
 
   <div class="col-lg-6">
     <h4>QR Code</h4>
+    <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=<%= @code %>" />
   </div>
 </div>

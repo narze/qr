@@ -1,7 +1,8 @@
 defmodule QrWeb.QrController do
   use QrWeb, :controller
 
-  def index(conn, _params) do
-    render conn, "index.html"
+  def index(conn, params) do
+    code = params |> Map.get("code")
+    render conn, "index.html", code: code
   end
 end
