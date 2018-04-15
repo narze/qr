@@ -43,6 +43,7 @@ defmodule Qr.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:espec, "~> 1.5.1", only: :test},
+      {:espec_phoenix, "~> 0.6.10", only: :test},
     ]
   end
 
