@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <h2><%= gettext "QR Generator", name: "QR Generator" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <p class="lead">Generate QR Codes Quickly!</p>
 </div>
 
 <div class="row marketing">
